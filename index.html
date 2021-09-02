@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Todo</title>
+</head>
+<body>
+    <main>
+        <!-- mainheading -->
+        <h1>My Todo App</h1>
+
+        <!--todoOptions-->
+        <div id="td-options">
+            <div id="search">
+                <input type="text" id="search-txt" placeholder="search your Todo">
+            </div>
+            <div id="hide-completed">
+                <label for="hide-check">
+                  Hide Completed Tasks
+                </label>
+                <input type="checkbox" id="hide-check" name="hide">
+            </div>
+        </div>
+
+        <!-- todo list -->
+        <div id="todo">
+                <ol id="td"></ol>
+        </div>
+
+        <!-- add todo -->
+        <div id="add-todo">
+            <input type="text" placeholder="Add A New To Do Task" id="new-task">
+            <button id="add-task">Add ToDo</button>
+        </div>
+
+        <!-- js files -->
+        <script src="todoFunctions.js"></script>
+        <script src="main.js"></script>
+    </main>
+</body>
+</html>
